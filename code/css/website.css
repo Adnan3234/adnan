@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top{
+    background-image: url(../images/unsplashdesk.jpg);
+    background-color: grey;
+    background-size: cover;
+    height: 99vh;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1>span{
+    font-weight: lighter;
+}
+.top h1{
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 10vw;
+    color: rgb(6, 255, 159);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .5rem;
+    letter-spacing: 5px;
+}
+p{
+    padding-top: .5rem;
+}
+.top>p{
+    padding-bottom: .5rem;
+}
+span{
+    color: rgb(12, 187, 120);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(204, 185, 185);
+    height: 50vh;
+    /* padding: 12vh 0; */
+}
+
+.same{
+    /* margin: 0 2vw; */   
+    /* we will use flexbox property */
+    flex-basis: 33%;
+        /* margin: .5rem; */
+        display: flex;
+        flex-direction: column;
+        /* height: 50vh; */    
+        transition: all 1s ;  
+       
+        
+}
+.same:hover{
+    border-radius: 50%;
+    box-shadow: -3px 3px 4px goldenrod;
+}
+@media(max-width:40rem){
+    .middle{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .same{
+        background-size: cover;
+        transition: none;
+        border-radius: 0%;
+    }
+    .same:hover{
+        transition: none;
+        border-radius: 0%;
+    }
+    .same:active{
+        color: rgb(0, 87, 0);
+    }
+    .top{
+        background-position: center;
+    }
+}
+.first{
+    background-image: url(../images/unsplash-house.jpg);
+    justify-content: center;
+    background-position: center;
+    
+}
+.second{
+    background-image: url(../images/unsplash-construction.jpg);
+    justify-content: center;
+    background-position: bottom;
+    
+}
+.third{
+    background-image: url(../images/unsplash-interior-small.jpg);
+    justify-content: center;
+    background-position: center;
+}
+
+.bottom{
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    padding: 10vh 0;
+    height: 50vh;
+    color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: flex-end;
+}
+.bottom-1{
+    flex-basis: 50%;
+    align-self: center;
+}
+a{
+    background-color: rgb(3, 73, 73);
+    color: yellowgreen;
+    text-decoration: none;
+    padding: 9px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+@media(max-width:40rem){
+    .bottom-1{
+        flex-basis: 100%;
+        padding-left: 15px;
+    }
+}
+a:hover{
+    background-color: rgb(34, 30, 34);
+}
+.middle p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 170%;
+    color: rgb(9, 207, 241);
+}
+.middle h2{
+    color: yellow;
+    font-size: 200%;
+}
